@@ -1,0 +1,72 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 12, 2023, 8:14:01 PM
+    Author     : ACER
+*/
+.bg-form{
+    -fx-background-color:linear-gradient(to top right, #a2cd5a, #ff6a6a);
+}
+
+.close{
+    -fx-background-color:#00405d;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#c5273f;
+}
+
+.minimize{
+    -fx-background-color:#00405d;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color:#c5273f;
+}
+
+.textfield{
+    -fx-background-color:#00405d;
+    -fx-text-inner-color:#ffffff;
+    -fx-border-color:#ff6a6a;
+    -fx-border-width:0px 0px .4px 0px;
+    -fx-text-size:13px;
+}
+.textfield:focused{
+    -fx-border-color:#a2cd5a;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+.login-btn{
+    -fx-background-color:#00405d;
+    -fx-background-radius:8px;
+    -fx-text-fill:#c79853;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom right, #45668e, #3b5998);
+}
+
+.hyperlink{
+    -fx-underline:false;
+    -fx-text-fill:#00405d;
+    -fx-border-color:transparent;
+    -fx-border-width:0px;
+}
+.hyperlink:hover{
+    -fx-text-fill:#00405d;
+}
+.signup-btn{
+    -fx-background-color:#00405d;
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+    -fx-text-fill:#d1abab;
+}
+.signup-btn:hover{
+    -fx-background-color:#c5273f;
+}
+
