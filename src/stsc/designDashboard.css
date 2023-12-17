@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 16, 2023, 11:07:23 PM
+    Author     : ACER
+*/
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .2px .4px .2px;
+}
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#e74141;
+}
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color:#dadada;
+}
+.nav-form{
+    -fx-background-color:linear-gradient(to top right, #a2cd5a, #ff6a6a);
+}
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#ffffff;
+    -fx-font-size:14px;
+    -fx-alignment: CENTER_LEFT;
+}
+.nav-btn:hover{
+    -fx-background-color:#c5273f;
+}
+.signout{
+    -fx-background-color:#ae2d3c;
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+}
+.signout:hover{
+    -fx-background-color:#e74141;
+}
+.bg-white{
+    -fx-background-color:#fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 8,0,0,0);
+    -fx-background-radius:8px;
+}
+.bg-white:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8,0,0,0);
+}
+.card1{
+    -fx-background-color:linear-gradient(to right, #2b428c, #2e58ab);
+    -fx-background-radius:0px 10px 10px 0px;
+}
+.card1-left{
+    -fx-background-color:linear-gradient(to right, #213778, #2b428c);
+}
+
+.card2{
+    -fx-background-color:linear-gradient(to right, #772d90, #a42fb8);
+    -fx-background-radius:0px 10px 10px 0px;
+}
+.card2-left{
+    -fx-background-color:linear-gradient(to right, #641f7f, #772d90);
+}
+
+.card3{
+    -fx-background-color:linear-gradient(to right, #9d2249, #cc1c5a);
+    -fx-background-radius:0px 10px 10px 0px;
+}
+.card3-left{
+    -fx-background-color:linear-gradient(to right, #891a41, #9d2249);
+}
+
+.card:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
