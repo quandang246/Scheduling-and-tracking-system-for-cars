@@ -82,3 +82,99 @@ and open the template in the editor.
 .card:hover{
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
 }
+
+/* add movies */
+/*add textfield cho textfield o movies title, genre, duration va published date*/
+.add-textfield{
+    -fx-background-color:#fff;
+    -fx-background-radius: 0px 5px 0px 0px;
+    -fx-border-color:#1e242e;
+    -fx-border-width: .8px;
+    -fx-border-radius:0px 5px 0px 0px;
+    -fx-font-size:13px;
+}
+.add-textfield:focused{
+    -fx-border-color:#ae2d3c;
+    -fx-border-width:1.5px;
+}
+
+/*insert button cho nut insert, import*/
+.insert-btn{
+    -fx-background-color:#3149a1;
+    -fx-background-radius:8px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.insert-btn:hover{
+    -fx-background-color:#3c71c4;
+}
+/*nut update*/
+.update-btn{
+    -fx-background-color:#337254;
+    -fx-background-radius:8px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.update-btn:hover{
+    -fx-background-color:#3ea185;
+}
+/*nut delete*/
+.delete-btn{
+    -fx-background-color:#962934;
+    -fx-background-radius:8px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.delete-btn:hover{
+    -fx-background-color:#d33d63;
+}
+/*nut clear*/
+.clear-btn{
+    -fx-background-color:#933b80;
+    -fx-background-radius: 8px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-cursor:hand;
+}
+.clear-btn:hover{
+    -fx-background-color:#c242be;
+}
+/*nut search*/
+.search{
+    -fx-background-color:#fff;
+    -fx-background-radius:0px 10px 0px 0px;
+    -fx-border-color:#1e242e;
+    -fx-border-width:1px;
+    -fx-font-size:14px;
+    -fx-border-radius:0px 10px 0px 0px;
+    -fx-padding:0px 0px 0px 25px;
+}
+.search:focused{
+    -fx-border-color:#ae2d3c;
+    -fx-border-width:2px;
+}
+/*het vid 1, bay gio sang vid 2*/
+/*table view*/
+.table-view{
+    -fx-background-color:#fff;
+    -fx-background-radius:10px;
+    -fx-border-color:#ae2d3c;
+    -fx-border-radius:10px;
+    -fx-fill:#fff;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to top right, #a2cd5a, #ff6a6a);
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius:10px 10px 0px 0px;
+}
+.table-view .column-header, .table-view .filler{
+    -fx-background-color:transparent;
+    -fx-size:50px;
+    -fx-fill:#fff;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#00405d;
+}
