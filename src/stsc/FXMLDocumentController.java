@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -25,8 +26,10 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -113,7 +116,7 @@ public class FXMLDocumentController implements Initializable {
         String sql = "INSERT INTO admin (email, username, password) VALUEs (?, ?, ?)";
 
         String sql1 = "SELECT username FROM admin";
-        
+
         connect = database.connectDb();
 
         try {
@@ -149,7 +152,7 @@ public class FXMLDocumentController implements Initializable {
 
                     prepare = connect.prepareStatement(sql1);
                     result = prepare.executeQuery();
-                //kiem tra xem da co username nay chua
+                    //kiem tra xem da co username nay chua
                     if (result.next()) {
 
                         alert = new Alert(AlertType.ERROR);
@@ -157,9 +160,9 @@ public class FXMLDocumentController implements Initializable {
                         alert.setHeaderText(null);
                         alert.setContentText(signUp_username.getText() + " was already exist!");
                         alert.showAndWait();
-                        
-                    }else{
-                    //khong cho dang ky username da tung dang ky
+
+                    } else {
+                        //khong cho dang ky username da tung dang ky
                         prepare.execute();
 
                         alert = new Alert(AlertType.INFORMATION);
@@ -167,7 +170,7 @@ public class FXMLDocumentController implements Initializable {
                         alert.setHeaderText(null);
                         alert.setContentText("Successfully create a new account!");
                         alert.showAndWait();
-                //after successful of creating new account, it will clear the textfield
+                        //after successful of creating new account, it will clear the textfield
                         signUp_email.setText("");
                         signUp_username.setText("");
                         signUp_password.setText("");
@@ -180,6 +183,9 @@ public class FXMLDocumentController implements Initializable {
         }
 
     }
+
+    private double x = 0;
+    private double y = 0;
 
     public void signin() {
 
@@ -210,6 +216,8 @@ public class FXMLDocumentController implements Initializable {
 
                 if (result.next()) {
 
+                    getData.username = signIn_username.getText();
+
                     alert = new Alert(AlertType.INFORMATION);
                     alert.setTitle("Information Message");
                     alert.setHeaderText(null);
@@ -223,6 +231,23 @@ public class FXMLDocumentController implements Initializable {
 
                     Stage stage = new Stage();
                     Scene scene = new Scene(root);
+
+                    root.setOnMousePressed((MouseEvent event) -> {
+
+                        x = event.getSceneX();
+                        y = event.getSceneY();
+
+                    });
+
+                    root.setOnMouseDragged((MouseEvent event) -> {
+                        
+                        stage.setX(event.getScreenX() - x);
+                        stage.setY(event.getScreenY() - y);
+                        
+                    });
+ 
+
+                    stage.initStyle(StageStyle.TRANSPARENT);
 
                     stage.setScene(scene);
                     stage.show();

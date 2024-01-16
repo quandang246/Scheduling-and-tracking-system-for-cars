@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stsc.FXMLDocumentController">
    <children>
-      <AnchorPane fx:id="signIn_form" layoutX="180.0" layoutY="152.0" prefHeight="548.0" prefWidth="760.0" styleClass="bg-form" stylesheets="@designLogin.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="signIn_form" layoutX="180.0" layoutY="152.0" prefHeight="548.0" prefWidth="760.0" styleClass="bg-form" stylesheets="@designLogin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Button fx:id="signIn_close" layoutX="701.0" layoutY="2.0" mnemonicParsing="false" onAction="#signIn_close" prefHeight="24.0" prefWidth="51.0" styleClass="close" stylesheets="@designLogin.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                <graphic>
@@ -51,7 +51,7 @@
             </Hyperlink>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="signUp_form" prefHeight="548.0" prefWidth="760.0" styleClass="bg-form" stylesheets="@designLogin.css">
+      <AnchorPane fx:id="signUp_form" prefHeight="548.0" prefWidth="760.0" styleClass="bg-form" stylesheets="@designLogin.css" visible="false">
          <children>
             <Button fx:id="signUp_close" layoutX="701.0" layoutY="2.0" mnemonicParsing="false" onAction="#signUp_close" prefHeight="24.0" prefWidth="51.0" styleClass="close" stylesheets="@designLogin.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                <graphic>

@@ -36,9 +36,7 @@ and open the template in the editor.
     -fx-font-size:14px;
     -fx-alignment: CENTER_LEFT;
 }
-.nav-btn:hover{
-    -fx-background-color:#c5273f;
-}
+
 .signout{
     -fx-background-color:#ae2d3c;
     -fx-background-radius:8px;
@@ -221,3 +219,24 @@ and open the template in the editor.
 .receipt-btn:hover{
     -fx-background-color:#d39948;
 }
+
+.combo-box{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+    -fx-border-color:#a2cd5a;
+    -fx-border-width: .5px;
+    -fx-border-radius: 5px;
+}
+.combo-box:focused{
+    -fx-border-color:#ff6a6a;
+    -fx-border-width: 1px;
+}
+
+.card-customer{
+-fx-background-color:#fff;
+-fx-background-radius:5px;
+-fx-border-color:#ff6a6a;
+-fx-border-width:1px;
+-fx-border-radius:5px;
+}
+
